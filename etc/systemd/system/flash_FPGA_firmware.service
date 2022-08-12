@@ -1,0 +1,13 @@
+[Unit]
+Description=Flash FPGA firmware service
+
+[Service]
+Type=oneshot
+StandardOutput=tty
+TTYPath=/dev/ttyTCU0
+ExecStart=/bin/sh /usr/sbin/flash_FPGA_firmware.sh
+ExecStartPost=/bin/systemctl disable flash_FPGA_firmware.service
+ExecStop=/sbin/reboot
+
+[Install]
+WantedBy=multi-user.target
