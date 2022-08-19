@@ -5,6 +5,7 @@ Description=Flash FPGA firmware service
 Type=oneshot
 StandardOutput=tty
 TTYPath=/dev/ttyTCU0
+ExecStartPre=/bin/sleep 30
 ExecStart=/bin/sh /usr/sbin/flash_FPGA_firmware.sh
 ExecStartPost=/bin/systemctl disable flash_FPGA_firmware.service
 ExecStop=/sbin/reboot
