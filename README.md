@@ -5,9 +5,9 @@
 
 The service/firmware for flash FPGA on Jetson Xavier-NX TN-TEK 8 series.
 
-This is the flash FPGA service for TEK8-NVJETSON with Xavier-NX.
+This is the flash FPGA service for TEK8-NX210V with Xavier-NX.
 
-It already appears in TN-Jetpack if you download the TEK8-NVJETSON.
+It already appears in TN-Jetpack if you download the TEK8-NX210V.
 
 ---
 ### Usage
