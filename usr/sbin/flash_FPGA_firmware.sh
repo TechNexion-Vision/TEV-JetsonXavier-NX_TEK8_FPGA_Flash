@@ -6,7 +6,7 @@ echo '***********************************'
 
 modprobe spidev
 cd /usr/share/FPGA_firmware/
-./afloader -d /dev/spidev2.0 -r -j ./nxbox-22.08.03.jed
+./afloader -d /dev/spidev2.0 -j ./nxbox-22.08.03.jed
 
 echo '***********************************'
 echo 'Flash FPGA firmware service Finish, Rebooting the system!!!'
