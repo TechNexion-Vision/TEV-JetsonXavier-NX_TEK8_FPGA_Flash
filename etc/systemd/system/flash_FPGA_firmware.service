@@ -9,6 +9,8 @@ ExecStartPre=/bin/sleep 30
 ExecStart=/bin/sh /usr/sbin/flash_FPGA_firmware.sh
 ExecStartPost=/bin/systemctl disable flash_FPGA_firmware.service
 ExecStop=/sbin/reboot
+TimeoutStopSec=3
+KillSignal=SIGTERM
 
 [Install]
 WantedBy=multi-user.target
